@@ -8,9 +8,15 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan
 
 public class Aplicacion {
-    public static void main(String[] args) {
-        
+
+    public static void main(String[] args) throws Exception {
+
         SpringApplication.run(Aplicacion.class, args);
+
+        System.out.println("Un mensaje desde Spring Boot");
         
+        LeerArchivo la = new LeerArchivo();
+        System.out.println(la.leer());
+
     }
 }
