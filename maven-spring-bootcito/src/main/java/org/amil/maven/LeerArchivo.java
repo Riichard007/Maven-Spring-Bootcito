@@ -2,8 +2,9 @@ package org.amil.maven;
 
 import java.io.*;
 
-public class LeerArchivo {
+public class LeerArchivo implements Leer{
     
+    @Override
     public String leer() throws Exception {
         File file = new File("/home/amil/Documentos/archivito");
         FileInputStream fis = new FileInputStream(file);
