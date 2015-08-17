@@ -1,8 +1,12 @@
-package org.amil.maven;
+package org.amil.proyectoFinal;
 
 import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.SessionFactory;
 
+/**
+ *
+ * @author Amil
+ */
 public class HibernateUtilidades {
 
     private static final SessionFactory sessionFactory;
